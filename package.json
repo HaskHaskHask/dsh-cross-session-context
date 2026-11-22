@@ -1,0 +1,30 @@
+{
+  "name": "dsh-cross-session-context",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cross-conversation context fusion for DeepSeek Harness: let one session read bounded background from other sessions in the same workspace.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test --test-isolation=none \"test/*.test.js\"",
+    "check": "node scripts/simulate.mjs"
+  }
+}

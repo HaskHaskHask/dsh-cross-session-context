@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cross-session context fusion",
+    "description": "Let a conversation read background from other sessions in the same workspace: the model can fuse on demand with a tool, and a new conversation can receive one bounded digest automatically on its first turn."
+  }
+}

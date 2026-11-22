@@ -1,0 +1,6 @@
+# Installs one Host row. The plugin registers one model-facing tool and one
+# agent/pre-step listener; it never writes session events of its own.
+- insert:
+    - id: cross-session-context
+      name: dsh-cross-session-context
+      config: {}
